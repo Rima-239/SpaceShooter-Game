@@ -1,0 +1,58 @@
+# ==============================================================================
+# SpaceShooter - Git Ignore Configuration
+# ==============================================================================
+
+# Compiled Java Bytecode & Build Artifacts
+*.class
+bin/
+out/
+build/
+dist/
+target/
+
+# Local Player Scores & Leaderboard Data (Privacy Protection)
+data/*.csv
+scores.csv
+*.csv
+!data/.gitkeep
+
+# Local Development Backups
+backup_original/
+backup*/
+
+# Logs, Dumps & Temporary Files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+hs_err_pid*
+replay_pid*
+
+# Operating System Metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Configurations
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.code-workspace
+.metadata/
+.project
+.classpath
+.settings/
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-cache/
+# Generated source file list
+sources.txt
