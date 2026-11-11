@@ -2,7 +2,7 @@
 
 ![Java Version](https://img.shields.io/badge/Java-21%2B-blue?logo=openjdk&logoColor=white)
 ![Framework](https://img.shields.io/badge/GUI-Java%20Swing%20%2F%20Java2D-orange)
-![Database](https://img.shields.io/badge/Database-Free%20(Local%20Storage)-green)
+![Database](<https://img.shields.io/badge/Database-Free%20(Local%20Storage)-green>)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
@@ -79,13 +79,13 @@ Battle across 3 sector waves of escalating difficulty, collect holographic energ
 
 ## 🛠 Technologies Used
 
-| Technology | Purpose |
-| :--- | :--- |
-| **Java 21+ (OpenJDK / Temurin)** | Core programming language and runtime environment |
-| **Java Swing (`javax.swing.*`)** | UI components, card layout navigation, and custom modal dialogs |
-| **Java2D (`java.awt.*`, `Graphics2D`)** | Vector rendering, double-buffered canvas, particle physics, anti-aliasing |
+| Technology                                 | Purpose                                                                    |
+| :----------------------------------------- | :------------------------------------------------------------------------- |
+| **Java 21+ (OpenJDK / Temurin)**           | Core programming language and runtime environment                          |
+| **Java Swing (`javax.swing.*`)**           | UI components, card layout navigation, and custom modal dialogs            |
+| **Java2D (`java.awt.*`, `Graphics2D`)**    | Vector rendering, double-buffered canvas, particle physics, anti-aliasing  |
 | **Java Sound API (`javax.sound.sampled`)** | Real-time procedural 16-bit sound synthesis, volume DSP, and clip playback |
-| **Java NIO (`java.nio.file.*`)** | Safe atomic file I/O, directory creation, and CSV persistence |
+| **Java NIO (`java.nio.file.*`)**           | Safe atomic file I/O, directory creation, and CSV persistence              |
 
 ---
 
@@ -123,6 +123,7 @@ Battle across 3 sector waves of escalating difficulty, collect holographic energ
 ```
 
 ### Screen Highlights:
+
 1. **Pilot Registration**: Glassmorphic modal with glowing neon cyan border, placeholder feedback, and personal best tracking.
 2. **Main Menu**: Deep space backdrop with dynamic animated starfield and live galactic high-score ticker.
 3. **Gameplay HUD**: Floating translucent glass cards for shields, lives, sector waves, and weapon tier pips.
@@ -133,17 +134,17 @@ Battle across 3 sector waves of escalating difficulty, collect holographic energ
 
 ## 🎮 Keyboard Controls
 
-| Key Binding | Action |
-| :--- | :--- |
-| `↑` `↓` `←` `→` / `W` `A` `S` `D` | Maneuver spaceship through space |
-| `SPACEBAR` | Fire plasma cannons (hold for continuous burst) |
-| `ESC` | Open / Close Pause Menu (or exit Fullscreen if active) |
-| `P` | Dedicated Pause / Resume toggle |
-| `F11` | Toggle Fullscreen mode |
-| `ESC` *(while Fullscreen)* | Smoothly restore windowed mode |
-| `M` | Mute / Unmute all sound effects and music |
-| `L` | Open Galactic Top 10 Leaderboard |
-| `ENTER` | Confirm callsign on Login / Restart on Game Over |
+| Key Binding                       | Action                                                 |
+| :-------------------------------- | :----------------------------------------------------- |
+| `↑` `↓` `←` `→` / `W` `A` `S` `D` | Maneuver spaceship through space                       |
+| `SPACEBAR`                        | Fire plasma cannons (hold for continuous burst)        |
+| `ESC`                             | Open / Close Pause Menu (or exit Fullscreen if active) |
+| `P`                               | Dedicated Pause / Resume toggle                        |
+| `F11`                             | Toggle Fullscreen mode                                 |
+| `ESC` _(while Fullscreen)_        | Smoothly restore windowed mode                         |
+| `M`                               | Mute / Unmute all sound effects and music              |
+| `L`                               | Open Galactic Top 10 Leaderboard                       |
+| `ENTER`                           | Confirm callsign on Login / Restart on Game Over       |
 
 ---
 
@@ -199,42 +200,54 @@ SpaceShooter/
 ## 🚀 Installation & Quick Start
 
 ### Prerequisites
+
 Ensure Java JDK 21 or higher is installed and added to your system `PATH`:
+
 ```powershell
 java -version
 javac -version
 ```
 
 ### Clone the Repository
+
 ```powershell
-git clone https://github.com/<your-username>/SpaceShooter.git
-cd SpaceShooter
+git clone https://github.com/Rima-239/SpaceShooter-Game.git
+cd SpaceShooter-Game
 ```
 
 ### 1. Compile (PowerShell)
+
 Compile all Java source files into the `out/` directory using the provided cross-platform `sources.txt`:
+
 ```powershell
 javac -encoding UTF-8 -d "out" "@sources.txt"
 ```
-*Alternatively, you can compile directly using PowerShell:*
+
+_Alternatively, you can compile directly using PowerShell:_
+
 ```powershell
 $files = Get-ChildItem -Path "src" -Recurse -Filter *.java | Select-Object -ExpandProperty FullName
 javac -encoding UTF-8 -d "out" $files
 ```
 
 ### 2. Launch the Game
+
 ```powershell
 java -cp "out" com.spaceshooter.Main
 ```
 
 ### 3. Run Automated System Tests
+
 Execute the comprehensive 88-point test suite covering score storage, physics, collisions, weapon levels, pause preservation, and audio volume controls:
+
 ```powershell
 java -cp "out" com.spaceshooter.ComprehensiveSystemTest
 ```
 
 ### 4. Run GUI Integration Test
+
 Verify window creation, card switching, and fullscreen toggle:
+
 ```powershell
 java -cp "out" com.spaceshooter.GuiIntegrationTest
 ```
@@ -290,7 +303,3 @@ Contributions and improvements are welcome!
 5. **Push to Your Branch & Open a Pull Request**.
 
 ---
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute it for educational and personal projects.
